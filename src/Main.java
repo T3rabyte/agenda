@@ -28,7 +28,7 @@ public class Main
         }
         if (menu == 2)
         {
-
+            deadlines.toevoegen_deadline();
         }
         if (menu == 3)
         {

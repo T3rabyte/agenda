@@ -12,10 +12,6 @@ public static void toevoegen_afspraak()
             int toevoegen_dag_afspraak;
             int toevoegen_week_afspraak;
 
-            String print;
-            int print2;
-            int print3;
-
             System.out.println("Type hier de beschrijving die u bij de afspraak wilt");
             Scanner input = new Scanner(System.in);
             toevoegen_string_afspraak = input.nextLine();
