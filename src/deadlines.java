@@ -53,7 +53,7 @@ public class deadlines
             System.out.println(voorzetsel + ". " + x);
             voorzetsel += 1;
         }
-        System.out.println("\nKies nu de deadline die u wilt aan wilt zetten");
+        System.out.println("\nKies nu de deadline die u aan wilt zetten");
 
         Scanner input = new Scanner(System.in);
         bool_index = input.nextInt();
