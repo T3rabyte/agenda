@@ -20,7 +20,7 @@ public class Main
                 "8. weergeven afspraken en deadlines van specifieke dag\n" +
                 "9. weergeven afspraken en deadlines van vandaag\n" +
                 "10. weergeven afspraken en deadlines van specifieke week\n" +
-                "11. weergeven afspraken en deadlines van deze week");
+                "11. weergeven afspraken en deadlines van deze week\n");
 
         Scanner input = new Scanner(System.in);
         menu = input.nextInt();
@@ -47,15 +47,15 @@ public class Main
         }
         if (menu == 6)
         {
-
+            afspraken.verwijdern_afspraak();
         }
         if (menu == 7)
         {
-
+            deadlines.verwijdern_deadline();
         }
         if (menu == 8)
         {
-
+            samen.weergeven_dag();
         }
         if (menu == 9)
         {

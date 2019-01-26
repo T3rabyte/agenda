@@ -56,6 +56,7 @@ public class deadlines
 
         Scanner input = new Scanner(System.in);
         int_index = input.nextInt();
+        int_index -= 1;
 
         System.out.println("\nHeeft u de deadline gehaald?" + "\n1. ja" + "\n2. nee");
         mini_me = input.nextInt();
@@ -91,6 +92,7 @@ public class deadlines
 
         Scanner input = new Scanner(System.in);
         int_index = input.nextInt();
+        int_index -= 1;
 
         System.out.println("Wat wilt u veranderen aan de deadline?" + "\n1. de beschrijving" + "\n2. de dag" + "\n3. de week");
         mini_me = input.nextInt();
@@ -114,5 +116,28 @@ public class deadlines
         }
 
         System.out.println("de deadline is nu aangepast");
+    }
+    public static void verwijdern_deadline()
+    {
+        int voorzetsel = 1;
+        int int_index;
+
+        System.out.println("Welke deadline wilt u verwijderen?");
+        for (String x : deadline_String)
+        {
+            System.out.println(voorzetsel + ". " + x);
+            voorzetsel += 1;
+        }
+
+        Scanner input = new Scanner(System.in);
+        int_index = input.nextInt();
+        int_index -= 1;
+
+        deadline_String.remove(int_index);
+        deadline_dag.remove(int_index);
+        deadline_week.remove(int_index);
+        deadline_int.remove(int_index);
+
+        System.out.println("De deadline is nu verwijderd");
     }
 }

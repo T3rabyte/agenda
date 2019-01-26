@@ -6,7 +6,7 @@ public class afspraken
     static List<Integer> afspraken_dag = new ArrayList<>();
     static List<Integer> afspraken_week = new ArrayList<>();
 
-public static void toevoegen_afspraak()
+        public static void toevoegen_afspraak()
         {
             String toevoegen_string_afspraak;
             int toevoegen_dag_afspraak;
@@ -26,7 +26,7 @@ public static void toevoegen_afspraak()
             afspraken_dag.add(toevoegen_dag_afspraak);
             afspraken_week.add(toevoegen_week_afspraak);
         }
-public static void bewerken_afspraak()
+        public static void bewerken_afspraak()
         {
             int voorzetsel = 1;
             int int_index;
@@ -44,6 +44,7 @@ public static void bewerken_afspraak()
 
             Scanner input = new Scanner(System.in);
             int_index = input.nextInt();
+            int_index -= 1;
 
             System.out.println("Wat wilt u veranderen aan de afspraak?" + "\n1. de beschrijving" + "\n2. de dag" + "\n3. de week");
             mini_me = input.nextInt();
@@ -67,5 +68,28 @@ public static void bewerken_afspraak()
             }
 
             System.out.println("de afspraak is nu aangepast");
+        }
+
+        public static void verwijdern_afspraak()
+        {
+            int voorzetsel = 1;
+            int int_index;
+
+            System.out.println("Welke afspraak wilt u verwijderen?");
+            for (String x : afspraken_String)
+            {
+                System.out.println(voorzetsel + ". " + x);
+                voorzetsel += 1;
+            }
+
+            Scanner input = new Scanner(System.in);
+            int_index = input.nextInt();
+            int_index -= 1;
+
+            afspraken_String.remove(int_index);
+            afspraken_dag.remove(int_index);
+            afspraken_week.remove(int_index);
+
+            System.out.println("De afspraak is nu verwijderd");
         }
 }
