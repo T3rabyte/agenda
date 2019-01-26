@@ -39,7 +39,7 @@ public class Main
         }
         if (menu == 4)
         {
-
+            deadlines.bewerken_deadline();
         }
         if (menu == 5)
         {

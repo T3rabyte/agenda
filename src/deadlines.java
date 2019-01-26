@@ -72,4 +72,47 @@ public class deadlines
         System.out.println("De status van de deadline is nu veranderd");
 
     }
+
+    public static void bewerken_deadline()
+    {
+        int voorzetsel = 1;
+        int int_index;
+        int mini_me;
+        String nieuwe_beschrijving;
+        int nieuwe_dag;
+        int nieuwe_week;
+
+        System.out.println("Welke deadline wilt u veranderen?");
+        for (String x : deadline_String)
+        {
+            System.out.println(voorzetsel + ". " + x);
+            voorzetsel += 1;
+        }
+
+        Scanner input = new Scanner(System.in);
+        int_index = input.nextInt();
+
+        System.out.println("Wat wilt u veranderen aan de deadline?" + "\n1. de beschrijving" + "\n2. de dag" + "\n3. de week");
+        mini_me = input.nextInt();
+        if(mini_me == 1)
+        {
+            System.out.println("type hier de nieuwe versie van de deadline");
+            nieuwe_beschrijving = input.nextLine();
+            deadline_String.set(int_index, nieuwe_beschrijving);
+        }
+        if(mini_me == 2)
+        {
+            System.out.println("type hier de nieuwe dag van de deadline");
+            nieuwe_dag = input.nextInt();
+            deadline_dag.set(int_index, nieuwe_dag);
+        }
+        if(mini_me == 3)
+        {
+            System.out.println("type hier de nieuwe week van de deadline");
+            nieuwe_week = input.nextInt();
+            deadline_dag.set(int_index, nieuwe_week);
+        }
+
+        System.out.println("de deadline is nu aangepast");
+    }
 }
