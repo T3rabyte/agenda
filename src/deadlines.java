@@ -41,7 +41,7 @@ public class deadlines
     public static void deadline_aan_uit()
     {
         int voorzetsel = 1;
-        int bool_index;
+        int int_index;
         int deadline_gehaald = 2;
         int deadline_niet_gehaald = 3;
         int mini_me;
@@ -53,21 +53,20 @@ public class deadlines
             System.out.println(voorzetsel + ". " + x);
             voorzetsel += 1;
         }
-        System.out.println("\nKies nu de deadline die u aan wilt zetten");
 
         Scanner input = new Scanner(System.in);
-        bool_index = input.nextInt();
+        int_index = input.nextInt();
 
         System.out.println("\nHeeft u de deadline gehaald?" + "\n1. ja" + "\n2. nee");
         mini_me = input.nextInt();
 
         if(mini_me == 1)
         {
-            deadline_int.set(bool_index, deadline_gehaald);
+            deadline_int.set(int_index, deadline_gehaald);
         }
         if(mini_me == 2)
         {
-            deadline_int.set(bool_index, deadline_niet_gehaald);
+            deadline_int.set(int_index, deadline_niet_gehaald);
         }
 
         System.out.println("De status van de deadline is nu veranderd");

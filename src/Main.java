@@ -35,7 +35,7 @@ public class Main
         }
         if (menu == 3)
         {
-
+            afspraken.bewerken_afspraak();
         }
         if (menu == 4)
         {

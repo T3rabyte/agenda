@@ -26,4 +26,46 @@ public static void toevoegen_afspraak()
             afspraken_dag.add(toevoegen_dag_afspraak);
             afspraken_week.add(toevoegen_week_afspraak);
         }
+public static void bewerken_afspraak()
+        {
+            int voorzetsel = 1;
+            int int_index;
+            int mini_me;
+            String nieuwe_beschrijving;
+            int nieuwe_dag;
+            int nieuwe_week;
+
+            System.out.println("Welke afspraak wilt u veranderen?");
+            for (String x : afspraken_String)
+            {
+                System.out.println(voorzetsel + ". " + x);
+                voorzetsel += 1;
+            }
+
+            Scanner input = new Scanner(System.in);
+            int_index = input.nextInt();
+
+            System.out.println("Wat wilt u veranderen aan de afspraak?" + "\n1. de beschrijving" + "\n2. de dag" + "\n3. de week");
+            mini_me = input.nextInt();
+            if(mini_me == 1)
+            {
+                System.out.println("type hier de nieuwe versie van de beschrijving");
+                nieuwe_beschrijving = input.nextLine();
+                afspraken_String.set(int_index, nieuwe_beschrijving);
+            }
+            if(mini_me == 2)
+            {
+                System.out.println("type hier de nieuwe dag van de afspraak");
+                nieuwe_dag = input.nextInt();
+                afspraken_dag.set(int_index, nieuwe_dag);
+            }
+            if(mini_me == 3)
+            {
+                System.out.println("type hier de nieuwe week van de afspraak");
+                nieuwe_week = input.nextInt();
+                afspraken_dag.set(int_index, nieuwe_week);
+            }
+
+            System.out.println("de afspraak is nu aangepast");
+        }
 }
