@@ -3,6 +3,9 @@ public class Main
 {
     public static void main(String[] args)
     {
+        boolean aan = true;
+
+        while (aan){
         int menu;
         System.out.println("\nWelkom bij Teun's agenda, \n\n" +
                 "in deze agenda kan je afspraken & deadlines  \n" +
@@ -40,7 +43,7 @@ public class Main
         }
         if (menu == 5)
         {
-
+            deadlines.deadline_aan_uit();
         }
         if (menu == 6)
         {
@@ -69,4 +72,5 @@ public class Main
 
 
     }
+}
 }
