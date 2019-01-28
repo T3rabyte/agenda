@@ -2,9 +2,9 @@ import java.util.*;
 
 public class afspraken
 {
-    static List<String> afspraken_String = new ArrayList<>();
-    static List<Integer> afspraken_dag = new ArrayList<>();
-    static List<Integer> afspraken_week = new ArrayList<>();
+    public static List<String> afspraken_String = new ArrayList<>();
+    public static List<Integer> afspraken_dag = new ArrayList<>();
+    public static List<Integer> afspraken_week = new ArrayList<>();
 
         public static void toevoegen_afspraak()
         {
@@ -25,6 +25,8 @@ public class afspraken
             afspraken_String.add(toevoegen_string_afspraak);
             afspraken_dag.add(toevoegen_dag_afspraak);
             afspraken_week.add(toevoegen_week_afspraak);
+
+            System.out.println("de afspraak is nu toegevoegt");
         }
         public static void bewerken_afspraak()
         {

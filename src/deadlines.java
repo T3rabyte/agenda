@@ -2,9 +2,9 @@ import java.util.*;
 
 public class deadlines
 {
-    static List<String> deadline_String = new ArrayList<>();
-    static List<Integer> deadline_dag = new ArrayList<>();
-    static List<Integer> deadline_week = new ArrayList<>();
+    public static List<String> deadline_String = new ArrayList<>();
+    public static List<Integer> deadline_dag = new ArrayList<>();
+    public static List<Integer> deadline_week = new ArrayList<>();
 
     static List<Integer> deadline_int = new ArrayList<>();
 
