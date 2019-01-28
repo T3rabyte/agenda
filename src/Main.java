@@ -59,7 +59,7 @@ public class Main
         }
         if (menu == 9)
         {
-
+            samen.weergeven_deze_dag();
         }
         if (menu == 10)
         {
