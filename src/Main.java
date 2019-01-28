@@ -67,7 +67,7 @@ public class Main
         }
         if (menu == 11)
         {
-
+            samen.weergeven_deze_week();
         }
 
 
