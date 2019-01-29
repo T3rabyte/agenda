@@ -4,9 +4,9 @@ public class Main
     public static void main(String[] args)
     {
         boolean aan = true;
+        int menu;
 
         while (aan){
-        int menu;
         System.out.println("\nWelkom bij Teun's agenda, \n\n" +
                 "in deze agenda kan je afspraken & deadlines  \n" +
                 "door het de leter voor uw keuze te typen komt u op de bijbehorende plek\n\n" +
