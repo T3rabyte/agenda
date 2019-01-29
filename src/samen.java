@@ -5,6 +5,7 @@ public class samen {
 
     private static Scanner input = new Scanner(System.in);
 
+    // deze funtion weergeeft de afspraken en deadlines van een specifieke dag
     public static void weergeven_dag() {
         int vergelijken_dag;
         int dag_is;
@@ -37,7 +38,7 @@ public class samen {
         }
 
     }
-
+    // deze funtion geeft de afspraken en deadlines van deze dag weer
     public static void weergeven_deze_dag() {
         Calendar cal = Calendar.getInstance();
         int dag = cal.get(Calendar.DATE);
@@ -68,7 +69,7 @@ public class samen {
             voorzetsel_2 += 1;
         }
     }
-
+    // deze funtion geeft de afspraken en deadlines van een specifieke week weer
     public static void weergeven_week() {
         int vergelijken_week;
         int week_is;
@@ -100,7 +101,7 @@ public class samen {
             voorzetsel_2 += 1;
         }
     }
-
+    // deze funtion geeft de afspraken en deadlines van deze week weer
     public static void weergeven_deze_week() {
         Calendar cal = Calendar.getInstance();
         int week = cal.get(Calendar.WEEK_OF_YEAR);

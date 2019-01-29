@@ -3,6 +3,8 @@ public class Main
 {
     public static void main(String[] args)
     {
+        // dit is mijn begin menu, vanuit hier kan je naar alle onderdelen en kom je daarna hier weer terug
+
         boolean aan = true;
         int menu;
 

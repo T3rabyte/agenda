@@ -8,6 +8,7 @@ public class afspraken
 
     static Scanner input = new Scanner(System.in);
 
+        // deze function voegt een afspraak toe
         public static void toevoegen_afspraak()
         {
             String toevoegen_string_afspraak;
@@ -30,6 +31,7 @@ public class afspraken
 
             System.out.println("de afspraak is nu toegevoegt");
         }
+        // deze function bewerkt een afspraak
         public static void bewerken_afspraak()
         {
             int voorzetsel = 1;
@@ -72,7 +74,7 @@ public class afspraken
 
             System.out.println("de afspraak is nu aangepast");
         }
-
+        // deze funtion verwijderd een afspraak
         public static void verwijdern_afspraak()
         {
             int voorzetsel = 1;

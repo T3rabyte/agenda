@@ -10,6 +10,7 @@ public class deadlines
 
     static Scanner input = new Scanner(System.in);
 
+    // deze funtion voegt een deadline toe
     public static void toevoegen_deadline()
     {
         String toevoegen_string_deadline;
@@ -38,7 +39,7 @@ public class deadlines
 
         System.out.println("De deadline is nu toegevoegt");
     }
-
+    // deze funtion veranderd de status van een deadline
     public static void deadline_aan_uit()
     {
         int voorzetsel = 1;
@@ -73,7 +74,7 @@ public class deadlines
         System.out.println("De status van de deadline is nu veranderd");
 
     }
-
+    // deze function bewerkt een deadline
     public static void bewerken_deadline()
     {
         int voorzetsel = 1;
@@ -116,6 +117,7 @@ public class deadlines
 
         System.out.println("de deadline is nu aangepast");
     }
+    // deze funtion verwijderd een deadine
     public static void verwijdern_deadline()
     {
         int voorzetsel = 1;
