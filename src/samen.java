@@ -11,6 +11,9 @@ public class samen {
         int dag_is;
         String String__afspraken_is;
         String String__deealines_is;
+        String String__afspraken_tijd;
+        String String__afspreken_locatie;
+        String String__afspraken_deelnemers;
         int voorzetsel_1 = 1;
         int voorzetsel_2 = 1;
 
@@ -32,7 +35,10 @@ public class samen {
             dag_is = afspraken.afspraken_dag.get(i);
             if (dag_is == vergelijken_dag) {
                 String__afspraken_is = afspraken.afspraken_String.get(i);
-                System.out.println(voorzetsel_2 + ". " + String__afspraken_is);
+                String__afspraken_tijd = afspraken.afspraken_tijd.get(i);
+                String__afspreken_locatie = afspraken.afspraken_locatie.get(i);
+                String__afspraken_deelnemers = afspraken.afspraken_deelnemers.get(i);
+                System.out.println(voorzetsel_2 + ". " + String__afspraken_is + " Tijd: " + String__afspraken_tijd + " Locatie: " + String__afspreken_locatie + " Deelnemers: " + String__afspraken_deelnemers);
             }
             voorzetsel_2 += 1;
         }
@@ -45,6 +51,9 @@ public class samen {
         int vergelijken_dag;
         String String__afspraken_is;
         String String__deealines_is;
+        String String__afspraken_tijd;
+        String String__afspreken_locatie;
+        String String__afspraken_deelnemers;
         int voorzetsel_1 = 1;
         int voorzetsel_2 = 1;
 
@@ -64,7 +73,10 @@ public class samen {
             vergelijken_dag = afspraken.afspraken_dag.get(i);
             if (dag == vergelijken_dag) {
                 String__afspraken_is = afspraken.afspraken_String.get(i);
-                System.out.println(voorzetsel_2 + ". " + String__afspraken_is);
+                String__afspraken_tijd = afspraken.afspraken_tijd.get(i);
+                String__afspreken_locatie = afspraken.afspraken_locatie.get(i);
+                String__afspraken_deelnemers = afspraken.afspraken_deelnemers.get(i);
+                System.out.println(voorzetsel_2 + ". " + String__afspraken_is + " Tijd: " + String__afspraken_tijd + " Locatie: " + String__afspreken_locatie + " Deelnemers: " + String__afspraken_deelnemers);
             }
             voorzetsel_2 += 1;
         }
@@ -75,6 +87,9 @@ public class samen {
         int week_is;
         String String__afspraken_is;
         String String__deealines_is;
+        String String__afspraken_tijd;
+        String String__afspreken_locatie;
+        String String__afspraken_deelnemers;
         int voorzetsel_1 = 1;
         int voorzetsel_2 = 1;
 
@@ -96,7 +111,10 @@ public class samen {
             week_is = afspraken.afspraken_week.get(i);
             if (week_is == vergelijken_week) {
                 String__afspraken_is = afspraken.afspraken_String.get(i);
-                System.out.println(voorzetsel_2 + ". " + String__afspraken_is);
+                String__afspraken_tijd = afspraken.afspraken_tijd.get(i);
+                String__afspreken_locatie = afspraken.afspraken_locatie.get(i);
+                String__afspraken_deelnemers = afspraken.afspraken_deelnemers.get(i);
+                System.out.println(voorzetsel_2 + ". " + String__afspraken_is + " Tijd: " + String__afspraken_tijd + " Locatie: " + String__afspreken_locatie + " Deelnemers: " + String__afspraken_deelnemers);
             }
             voorzetsel_2 += 1;
         }
@@ -108,6 +126,9 @@ public class samen {
         int vergelijken_week;
         String String__afspraken_is;
         String String__deealines_is;
+        String String__afspraken_tijd;
+        String String__afspreken_locatie;
+        String String__afspraken_deelnemers;
         int voorzetsel_1 = 1;
         int voorzetsel_2 = 1;
 
@@ -127,7 +148,10 @@ public class samen {
             vergelijken_week = afspraken.afspraken_week.get(i);
             if (week == vergelijken_week) {
                 String__afspraken_is = afspraken.afspraken_String.get(i);
-                System.out.println(voorzetsel_2 + ". " + String__afspraken_is);
+                String__afspraken_tijd = afspraken.afspraken_tijd.get(i);
+                String__afspreken_locatie = afspraken.afspraken_locatie.get(i);
+                String__afspraken_deelnemers = afspraken.afspraken_deelnemers.get(i);
+                System.out.println(voorzetsel_2 + ". " + String__afspraken_is + " Tijd: " + String__afspraken_tijd + " Locatie: " + String__afspreken_locatie + " Deelnemers: " + String__afspraken_deelnemers);
             }
             voorzetsel_2 += 1;
         }
