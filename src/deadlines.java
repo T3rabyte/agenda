@@ -8,6 +8,8 @@ public class deadlines
 
     static List<Integer> deadline_int = new ArrayList<>();
 
+    static Scanner input = new Scanner(System.in);
+
     public static void toevoegen_deadline()
     {
         String toevoegen_string_deadline;
@@ -21,7 +23,6 @@ public class deadlines
 
 
         System.out.println("Type hier de beschrijving die u bij de deadline wilt");
-        Scanner input = new Scanner(System.in);
         toevoegen_string_deadline = input.nextLine();
 
         System.out.println("Op welke dag moet de deadline komen te staan?");
@@ -54,7 +55,6 @@ public class deadlines
             voorzetsel += 1;
         }
 
-        Scanner input = new Scanner(System.in);
         int_index = input.nextInt();
         int_index -= 1;
 
@@ -90,7 +90,6 @@ public class deadlines
             voorzetsel += 1;
         }
 
-        Scanner input = new Scanner(System.in);
         int_index = input.nextInt();
         int_index -= 1;
 
@@ -129,7 +128,7 @@ public class deadlines
             voorzetsel += 1;
         }
 
-        Scanner input = new Scanner(System.in);
+
         int_index = input.nextInt();
         int_index -= 1;
 

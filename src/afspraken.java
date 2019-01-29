@@ -6,6 +6,8 @@ public class afspraken
     public static List<Integer> afspraken_dag = new ArrayList<>();
     public static List<Integer> afspraken_week = new ArrayList<>();
 
+    static Scanner input = new Scanner(System.in);
+
         public static void toevoegen_afspraak()
         {
             String toevoegen_string_afspraak;
@@ -44,7 +46,6 @@ public class afspraken
                 voorzetsel += 1;
             }
 
-            Scanner input = new Scanner(System.in);
             int_index = input.nextInt();
             int_index -= 1;
 
@@ -84,7 +85,6 @@ public class afspraken
                 voorzetsel += 1;
             }
 
-            Scanner input = new Scanner(System.in);
             int_index = input.nextInt();
             int_index -= 1;
 

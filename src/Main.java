@@ -20,7 +20,8 @@ public class Main
                 "8. weergeven afspraken en deadlines van specifieke dag\n" +
                 "9. weergeven afspraken en deadlines van vandaag\n" +
                 "10. weergeven afspraken en deadlines van specifieke week\n" +
-                "11. weergeven afspraken en deadlines van deze week\n");
+                "11. weergeven afspraken en deadlines van deze week\n" +
+                "12. sluit het programma af");
 
         Scanner input = new Scanner(System.in);
         menu = input.nextInt();
@@ -68,6 +69,10 @@ public class Main
         if (menu == 11)
         {
             samen.weergeven_deze_week();
+        }
+        if (menu == 12)
+        {
+            System.exit(0);
         }
 
 
